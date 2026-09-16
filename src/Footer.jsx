@@ -10,21 +10,21 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          Linkedin
+          <i className="bi bi-linkedin"></i>
         </a>
         <a
           href="https://github.com/your-username"
           target="_blank"
           rel="noreferrer"
         >
-          Github
+          <i className="bi bi-github"></i>
         </a>
         <a
           href="https://your-portfolio-site.com"
           target="_blank"
           rel="noreferrer"
         >
-          Portfolio
+          <i className="bi bi-globe"></i>
         </a>
       </div>
     </footer>
