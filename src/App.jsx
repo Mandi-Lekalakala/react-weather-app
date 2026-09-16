@@ -1,10 +1,15 @@
 import { useState } from "react";
 import "./App.css";
+import Weather from "./Weather";
+import Footer from "./Footer";
 
 export default function App() {
   return (
-    <>
-      <h1>Weather App</h1>
-    </>
+    <div className="App">
+      <div className="container">
+        <Weather />
+        <Footer />
+      </div>
+    </div>
   );
 }
