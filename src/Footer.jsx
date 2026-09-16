@@ -1,4 +1,32 @@
-import "./Footer.css";
 export default function Footer() {
-  return <div className="Footer">hi from footer</div>;
+  return (
+    <footer className="footer">
+      <p className="footer-copyright">
+        &copy; {new Date().getFullYear()} Mandi Lekalakala
+      </p>
+      <div className="footer-icons">
+        <a
+          href="https://linkedin.com/in/your-profile"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+        </a>
+        <a
+          href="https://github.com/your-username"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+        <a
+          href="https://your-portfolio-site.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Portfolio
+        </a>
+      </div>
+    </footer>
+  );
 }
