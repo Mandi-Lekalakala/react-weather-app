@@ -10,6 +10,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter a City.."
               className="search-input"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
