@@ -1,9 +1,9 @@
 .Weather {
   background-color: #fafaf9;
   border: 1px solid #e5e5e5;
-  border-radius: 16px;
+  border-radius: 6px;
   padding: 32px;
-  margin: 30px auto;
+  margin: 20 auto;
 }
 
 .search-input {
@@ -13,6 +13,7 @@
   font-size: 15px;
   width: 100%;
   outline: none;
+  margin-bottom: 20px;
 }
 
 .search-input:focus {
