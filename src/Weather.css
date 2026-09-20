@@ -1,6 +1,30 @@
 .Weather {
-  background-color: #f5f5f3;
+  background-color: #fafaf9;
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   padding: 32px;
+  margin: 30px auto;
+}
+
+.search-input {
+  border: 1px solid #d5d5d0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #a5a5a0;
+}
+
+.search-button {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  cursor: pointer;
 }
