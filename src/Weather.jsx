@@ -3,40 +3,53 @@ import "./Weather.css";
 export default function Weather() {
   return (
     <div className="Weather">
-      <form>
-        <div className="row">
-          <div className="col-9">
-            <input
-              type="search"
-              placeholder="Enter a City.."
-              className="search-input"
-              autoFocus="on"
-            />
-          </div>
-          <div className="col-3">
-            <input type="submit" value="Search" className="search-button" />
-          </div>
+      {/* Search Bar & Button */}
+
+      <form className="row">
+        <div className="col-10">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            className="search-input"
+            autoFocus
+          />
+        </div>
+        <div className="col-2">
+          <input type="submit" value="Search" className="search-button" />
         </div>
       </form>
-      <h1>Johannesburg</h1>
-      <ul>
-        <li>Wednesday 14:20</li>
-        <li>Clear sky</li>
-      </ul>
-      <div className="row">
-        <div className="col-6">
+
+      {/* Current Location and Info */}
+
+      <div className="row weather-card align-items-center">
+        <div className="col-9">
+          <h1>Johannesburg</h1>
+          <p className="weather-date">Wed 14:20, clear sky</p>
+        </div>
+        <div className="col-3 text-center">
           <img
             src="https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_day_light.svg"
-            alt="Clear sky"
+            alt="clear sky"
+            className="weather-icon"
           />
-          24°C
+          <div className="weather-temp">24°</div>
         </div>
-        <div className="col-6">
-          <ul>
-            <li>Humidity: 40%</li>
-            <li>Precipitation: 15%</li>
-            <li>Wind: 10km/h</li>
-          </ul>
+      </div>
+
+      {/* Current Weather Stats */}
+
+      <div className="weather-stats">
+        <div className="stat-card text-center">
+          <p className="stat-label">Humidity</p>
+          <p className="stat-value">40%</p>
+        </div>
+        <div className="stat-card text-center">
+          <p className="stat-label">Precipitation</p>
+          <p className="stat-value">15%</p>
+        </div>
+        <div className="stat-card text-center">
+          <p className="stat-label">Wind</p>
+          <p className="stat-value">10 km/h</p>
         </div>
       </div>
     </div>

@@ -1,10 +1,14 @@
+/* Weather Container */
+
 .Weather {
   background-color: #fafaf9;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   padding: 32px;
-  margin: 20 auto;
+  margin: 20px auto;
 }
+
+/* Search Bar & Button */
 
 .search-input {
   border: 1px solid #d5d5d0;
@@ -19,7 +23,6 @@
 .search-input:focus {
   border-color: #a5a5a0;
 }
-
 .search-button {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -28,4 +31,60 @@
   padding: 10px 14px;
   font-size: 15px;
   cursor: pointer;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.search-button:hover {
+  color: #1a1a1a;
+  background-color: #d5d5d0;
+}
+
+.weather-card {
+  margin-top: 15px;
+}
+
+.weather-card h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.weather-date {
+  color: #6b6b6b;
+  margin-bottom: 0;
+}
+
+.weather-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.weather-temp {
+  margin-top: 5px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.weather-stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+.stat-label {
+  color: #6b6b6b;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.stat-value {
+  font-weight: 600;
+  margin-top: 0;
 }
