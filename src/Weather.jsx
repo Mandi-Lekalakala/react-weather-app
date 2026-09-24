@@ -1,6 +1,8 @@
 import "./Weather.css";
-
+import axios from "axios";
 export default function Weather() {
+  const apiKey = "cfabea60f0eoe0t3bb3e16a70e85e14b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   return (
     <div className="Weather">
       {/* Search Bar & Button */}
