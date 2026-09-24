@@ -60,8 +60,15 @@
 
 .weather-temp {
   margin-top: 5px;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
+}
+
+.weather-unit {
+  font-size: 13px;
+  font-weight: 400;
+  vertical-align: super;
+  margin-left: 2px;
 }
 
 .weather-stats {
