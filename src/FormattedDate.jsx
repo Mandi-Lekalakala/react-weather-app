@@ -1,3 +1,5 @@
+// Fetching Date data from SheCodes Weather Api //
+
 export default function FormattedDate(props) {
   let days = [
     "Sunday",
