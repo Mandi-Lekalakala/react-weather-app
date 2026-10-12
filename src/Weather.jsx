@@ -16,8 +16,7 @@ export default function Weather(props) {
       city: response.data.city,
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
-      iconUrl:
-        "https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg",
+      iconCode: response.data.condition.icon,
     });
   }
 
