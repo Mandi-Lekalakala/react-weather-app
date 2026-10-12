@@ -1,4 +1,5 @@
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -13,8 +14,8 @@ export default function WeatherInfo(props) {
           </p>
         </div>
         <div className="col-3 text-center">
-          <img
-            src={props.data.iconUrl}
+          <WeatherIcon
+            code={props.data.iconCode}
             alt={props.data.description}
             className="weather-icon"
           />
