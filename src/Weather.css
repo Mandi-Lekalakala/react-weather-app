@@ -53,6 +53,11 @@
   margin-bottom: 0;
 }
 
+.weather-details {
+  color: #6b6b6b;
+  margin-bottom: 0;
+}
+
 .weather-icon {
   width: 70px;
   height: 70px;
@@ -60,7 +65,7 @@
 
 .weather-temp {
   margin-top: -6px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -69,29 +74,4 @@
   font-weight: 500;
   vertical-align: super;
   margin-left: 2px;
-}
-
-.weather-stats {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.stat-card {
-  flex: 1;
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 4px 10px;
-}
-
-.stat-label {
-  color: #6b6b6b;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 450;
-}
-
-.stat-value {
-  font-weight: 600;
-  margin-top: 0;
 }
