@@ -12,6 +12,10 @@ export default function WeatherInfo(props) {
           <p className="weather-date text-capitalize">
             <FormattedDate date={props.data.date} />, {props.data.description}
           </p>
+          <p className="weather-details">
+            Humidity: <strong>{Math.round(props.data.humidity)}%</strong>, Wind:{" "}
+            <strong>{Math.round(props.data.wind)} km/h</strong>
+          </p>
         </div>
         <div className="col-3 text-center">
           <WeatherIcon
@@ -23,23 +27,6 @@ export default function WeatherInfo(props) {
             {Math.round(props.data.temperature)}
             <span className="weather-unit">°C</span>
           </div>
-        </div>
-      </div>
-
-      {/* Current Weather Stats */}
-
-      <div className="weather-stats">
-        <div className="stat-card text-center">
-          <p className="stat-label">Humidity</p>
-          <p className="stat-value">{Math.round(props.data.humidity)}%</p>
-        </div>
-        {/* <div className="stat-card text-center">
-            <p className="stat-label">Precipitation</p>
-            <p className="stat-value">15%</p>
-          </div> */}
-        <div className="stat-card text-center">
-          <p className="stat-label">Wind</p>
-          <p className="stat-value">{Math.round(props.data.wind)} km/h</p>
         </div>
       </div>
     </div>
