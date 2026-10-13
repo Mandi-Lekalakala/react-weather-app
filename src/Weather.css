@@ -73,5 +73,14 @@
   font-size: 13px;
   font-weight: 500;
   vertical-align: super;
-  margin-left: 2px;
+  margin-left: 5px;
+}
+
+.weather-unit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.weather-unit a:hover {
+  color: #0d6efd;
 }
