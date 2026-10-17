@@ -39,6 +39,8 @@ export default function WeatherIcon(props) {
       src={iconMapping[props.code] || cloudy}
       alt={props.alt}
       className={props.className}
+      width={props.size}
+      height={props.size}
     />
   );
 }
