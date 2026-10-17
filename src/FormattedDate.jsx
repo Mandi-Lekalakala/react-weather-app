@@ -1,5 +1,4 @@
 // Fetching Date data from SheCodes Weather Api //
-
 export default function FormattedDate(props) {
   let days = [
     "Sunday",
@@ -10,12 +9,17 @@ export default function FormattedDate(props) {
     "Friday",
     "Saturday",
   ];
-  let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
+
+  let localDate = new Date(
+    props.date.toLocaleString("en-US", { timeZone: props.timezone }),
+  );
+
+  let day = days[localDate.getDay()];
+  let hours = localDate.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = props.date.getMinutes();
+  let minutes = localDate.getMinutes();
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
