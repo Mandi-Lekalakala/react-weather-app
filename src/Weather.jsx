@@ -1,6 +1,7 @@
 import { useState } from "react";
-import "./Weather.css";
+import tzlookup from "tz-lookup";
 import axios from "axios";
+import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 export default function Weather(props) {
@@ -11,6 +12,7 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
@@ -18,6 +20,10 @@ export default function Weather(props) {
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       iconCode: response.data.condition.icon,
+      timezone: tzlookup(
+        response.data.coordinates.latitude,
+        response.data.coordinates.longitude,
+      ),
     });
   }
 
@@ -58,7 +64,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
