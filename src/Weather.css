@@ -41,36 +41,33 @@
 }
 
 .weather-card {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .weather-card h1 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 0;
 }
 .weather-date {
   color: #6b6b6b;
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 .weather-details {
   color: #6b6b6b;
   margin-bottom: 0;
-}
-
-.weather-icon {
-  width: 70px;
-  height: 70px;
+  font-size: 15px;
 }
 
 .weather-temp {
-  margin-top: -6px;
-  font-size: 24px;
+  margin-top: -15px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .weather-unit {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   vertical-align: super;
   margin-left: 5px;
