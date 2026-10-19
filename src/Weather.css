@@ -67,10 +67,9 @@
 }
 
 .weather-unit {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   vertical-align: super;
-  margin-left: 5px;
 }
 
 .weather-unit a {

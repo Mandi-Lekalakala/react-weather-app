@@ -8,21 +8,21 @@ export default function Footer() {
       </p>
       <div className="footer-icons">
         <a
-          href="https://linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/mandilekalakala/"
           target="_blank"
           rel="noreferrer"
         >
           <i className="bi bi-linkedin"></i>
         </a>
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/Mandi-Lekalakala"
           target="_blank"
           rel="noreferrer"
         >
           <i className="bi bi-github"></i>
         </a>
         <a
-          href="https://your-portfolio-site.com"
+          href="https://mandi-lekalakala.netlify.app/"
           target="_blank"
           rel="noreferrer"
         >

@@ -16,6 +16,10 @@
   color: #555;
 }
 
-p {
+.footer-icons a:hover {
+  color: #0d6efd;
+}
+
+.footer p {
   margin-bottom: 0;
 }
