@@ -49,8 +49,8 @@ src/
 ## 🚀 Run It Locally
 
 ```bash
-git clone https://github.com/Mandi-Lekalakala/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone (https://github.com/Mandi-Lekalakala/react-weather-app).git
+cd react-weather-app
 npm install
 npm run dev
 ```
