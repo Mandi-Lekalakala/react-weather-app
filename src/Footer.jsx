@@ -4,8 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <p className="footer-copyright">
-        &copy; {new Date().getFullYear()} Mandi M Lekalakala. All Rights
-        Reserved.
+        &copy; {new Date().getFullYear()} Mandi Lekalakala. All Rights Reserved.
       </p>
       <div className="footer-icons">
         <a
